@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar{
-  /* display: none !important; */
+  display: none !important;
   width: 0rem;
 }
 
@@ -26,8 +26,8 @@
   top: 7.4%;
   left: 0;
   right: 0;
-  height: 10px;
-  background: blueviolet;
+  height: 5px;
+  background: linear-gradient(to left, blueviolet, rgb(43, 128, 226));
   transform-origin: 0%;
 }
 

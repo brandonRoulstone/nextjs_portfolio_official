@@ -41,7 +41,7 @@ const NavigationBar = () => {
         </div>
 
         { open === true ? (
-                <div className="translate-nav bg-zinc-50 h-[100vh] w-72 fixed top-18 flex justify-center items-center ease-linear transition-all z-10" id="navbar">
+                <div className="translate-nav bg-[rgb(12,12,12)] h-[100vh] w-72 fixed top-18 flex justify-center items-center ease-linear transition-all z-10" id="navbar">
                     <ul className="flex justify-evenly flex-col list-none text-xl font-semibold">
 
                         <div className="h-[100vh] flex flex-col justify-center min-w-[100%] items-center top-[5rem] gap-11 text-zinc-700">
