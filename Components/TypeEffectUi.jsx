@@ -13,9 +13,9 @@ const TypeAnimationUi = () => {
       ]}
       wrapper="span"
       speed={50}
-      style={{ display: 'inline-block', color: 'black' }}
+      style={{ display: 'inline-block' }}
       repeat={Infinity}
-      className="text-[1.2rem] w-[100%] text-black sm:text-4xl"
+      className="text-[1.2rem] w-[100%] bg-gradient-to-r from-zinc-200 via-zinc-600 to-zinc-200 bg-clip-text text-transparent sm:text-4xl"
     />
   );
 };

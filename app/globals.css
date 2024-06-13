@@ -27,7 +27,7 @@
   left: 0;
   right: 0;
   height: 5px;
-  background: linear-gradient(to left, blueviolet, rgb(43, 128, 226));
+  background: linear-gradient(to right, rgb(37, 36, 36), rgb(204, 204, 204), rgb(238, 234, 234));
   transform-origin: 0%;
 }
 
