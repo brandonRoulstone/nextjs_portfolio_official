@@ -13,7 +13,7 @@ const NavigationBar = () => {
 
   return (
     <>
-        <div className="navbar bg-[rgb(12,12,12)] fixed top-0 z-50">
+        <div className="navbar bg-[rgb(12,12,12)] fixed top-0 z-[100]">
             <div className="flex-none">
                 <label className="btn bg-transparent border-none btn-circle swap swap-rotate hover:bg-transparent">
 
