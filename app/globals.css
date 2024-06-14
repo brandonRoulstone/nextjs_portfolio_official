@@ -1,11 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 .translate-nav{
   animation-name: nav-like-animation;
   animation-duration: .6s;
 }
+
+.font-inconsolata{
+  font-family: Inconsolata;
+  line-height: normal;
+  font-weight: 600;
+}
+
+/* *{
+  cursor: none;
+} */
 
 @keyframes nav-like-animation {
   from {
