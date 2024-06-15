@@ -9,21 +9,21 @@ const Cursor = () => {
     setCursorX(event.clientX);
     setCursorY(event.clientY);
   };
-
+  
   useEffect(() => {
+    const cmd = document.getElementById("windowCMD"); 
     // Add event listener for mouse movement
-    document.addEventListener('mousemove', updateCursorPosition);
+    if(cmd){
+      cmd.addEventListener('mouseover', updateCursorPosition);
+    }
 
     // Clean up the event listener on component unmount
     return () => {
-      document.removeEventListener('mousemove', updateCursorPosition);
+      cmd.removeEventListener('mouseover', updateCursorPosition);
     };
   }, []);
 
   return (
-    // <div className="cursor">
-    //   <div className="outer-cursor" style={{ top: cursorY, left: cursorX }}><div className="inner-cursor"></div></div>
-    // </div>
     <svg
         className="fixed"
         width="28"

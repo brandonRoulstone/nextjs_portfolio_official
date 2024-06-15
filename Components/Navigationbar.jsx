@@ -35,7 +35,7 @@ const NavigationBar = () => {
 
             <div className="flex-1 px-1 z-50">
                 <Link href="/" className="text-3xl bg-gradient-to-r from-zinc-500 via-zinc-200 to-zinc-500 bg-clip-text text-transparent flex font-[baloo] font-extrabold">
-                   <span className='bg-gradient-to-r from-zinc-500 via-zinc-200 to-zinc-500 bg-clip-text text-transparent'>{'<'} </span> <span className='skeleton bg-gradient-to-r from-zinc-500 via-zinc-200 to-zinc-500 bg-clip-text text-transparent'>Brandon</span> Roulstone /<span className='bg-gradient-to-r from-zinc-500 via-zinc-200 to-zinc-500 bg-clip-text text-transparent'> {'>'}</span>
+                   <span className='bg-gradient-to-r from-zinc-500 via-zinc-200 to-zinc-500 bg-clip-text text-transparent'>{'<'} </span> <span className='bg-gradient-to-r from-violet-900 via-violet-600 to-violet-900 bg-clip-text text-transparent'>Dxssigner</span> .IO /<span className='bg-gradient-to-r from-zinc-500 via-zinc-200 to-zinc-500 bg-clip-text text-transparent'> {'>'}</span>
                 </Link>
             </div>
 
