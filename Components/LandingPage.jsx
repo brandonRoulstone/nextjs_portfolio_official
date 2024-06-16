@@ -4,6 +4,8 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Carousel from "./CarouselIcon";
 import Card from "./Card";
+import { ArrowIcon } from "./SvgIcons/SvgIcons";
+// https://aimlapi.com/best-ai-apis-for-free
 
 const LandingPage = () => {
     const { scrollYProgress } = useScroll();
@@ -25,12 +27,12 @@ const LandingPage = () => {
                 transition={{
                     duration: 1,
                     ease: [0, 0.71, 0.2, 1.01],
-                    scale: {
-                        type: "spring",
-                        damping: 5,
-                        stiffness: 200,
-                        restDelta: 0.001
-                    }
+                    // scale: {
+                    //     type: "spring",
+                    //     damping: 5,
+                    //     stiffness: 200,
+                    //     restDelta: 0.001
+                    // }
                 }}
                 className="text-6xl font-bold font-serif text-zinc-100">
 
@@ -39,12 +41,12 @@ const LandingPage = () => {
                 </div>
 
                 <span className="">Transform </span>
-                <span className="bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-500 bg-clip-text text-transparent animate-pulse"> Your Portfolio</span> .
+                <span className="bg-gradient-to-r from-purple-500 via-cyan-500 to-purple-500 bg-clip-text text-transparent"> Your Business</span> .
             </motion.div>
         </div>
 
         <div className="mt-10 flex gap-10 justify-center">
-            {/* <button className="btn bg-white hover:bg-transparent hover:text-white border border-white text-2xl cursor-pointer text-zinc-950">My work</button> */}
+            
             <motion.button
                 whileHover={{ scale: 1.2 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -52,6 +54,7 @@ const LandingPage = () => {
                 className="btn bg-transparent hover:bg-white hover:text-purple-700 border border-white text-2xl cursor-pointer text-zinc-50">
                 About Dxssinger
             </motion.button>
+            
             <motion.button 
                 whileHover={{ scale: 1.2 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -59,6 +62,7 @@ const LandingPage = () => {
                 className="btn bg-white hover:bg-transparent hover:border-white hover:text-white border border-white text-2xl cursor-pointer text-purple-700">
                 Get started 
             </motion.button>
+
         </div>
         <>
             <a href="mailto:brandonroulstone465@gmail.com" target="_blank" className="fixed bottom-[8.5%] right-[.5%] border border-white bg-zinc-950 px-2 py-2 rounded-full tooltip tooltip-left shadow-lg cursor-pointer hover:translate-y-[-.6rem] ease-in-out transition-all z-50" data-tip="Contact me">
@@ -68,10 +72,37 @@ const LandingPage = () => {
             </a>
         </>
         {/* <Carousel images={images} /> */}
-        <div className="absolute bottom-3 flex gap-5">
-            <Card title="Hello world" image="https://cdn-images.imagevenue.com/ae/09/66/ME18I51M_o.jpg" heading="New Title" text="Hello from a new init world" button="Click now" />
-            <Card title="Hello world" image="https://cdn-images.imagevenue.com/ae/09/66/ME18I51M_o.jpg" heading="New Title" text="Hello from a new init world" button="Click now" />
-            <Card title="Hello world" image="https://cdn-images.imagevenue.com/ae/09/66/ME18I51M_o.jpg" heading="New Title" text="Hello from a new init world" button="Click now" />
+        <div className="absolute bottom-6 flex gap-5">
+
+            <Card 
+                title="Hello world" 
+                image="https://cdn-images.imagevenue.com/9d/9e/6c/ME18IBGY_o.jpg" 
+                heading="New Title" text="Hello from a new init world" 
+                button="Generate template" 
+            />
+
+            <div className="flex justify-center items-center">
+                <ArrowIcon />
+            </div>
+
+            <Card 
+                title="Hello world"
+                image="https://cdn-images.imagevenue.com/9d/9e/6c/ME18IBGY_o.jpg"
+                heading="New Title" text="Hello from a new init world"
+                button="Generate e-com"
+            />
+
+            <div className="flex justify-center items-center">
+                <ArrowIcon />
+            </div>
+
+            <Card 
+                title="Hello world"
+                image="https://cdn-images.imagevenue.com/9d/9e/6c/ME18IBGY_o.jpg"
+                heading="New Title" text="Hello from a new init world" 
+                button="Generate landing page"
+            />
+
         </div>
     </div>
   )
