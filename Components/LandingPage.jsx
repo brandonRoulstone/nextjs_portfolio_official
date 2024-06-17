@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Carousel from "./CarouselIcon";
 import Card from "./Card";
 import { ArrowIcon } from "./SvgIcons/SvgIcons";
+import MarqueeCarousel from "./MarqueeCarousel/MarqueeCarousel";
 // https://aimlapi.com/best-ai-apis-for-free
 
 const LandingPage = () => {
@@ -41,7 +42,7 @@ const LandingPage = () => {
                 </div>
 
                 <span className="">Transform </span>
-                <span className="bg-gradient-to-r from-purple-500 via-cyan-500 to-purple-500 bg-clip-text text-transparent"> Your Business</span> .
+                <span className="bg-gradient-to-r from-violet-900 via-violet-600 to-violet-900 bg-clip-text text-transparent"> Your Business</span> .
             </motion.div>
         </div>
 
@@ -71,39 +72,11 @@ const LandingPage = () => {
                 </svg>
             </a>
         </>
-        {/* <Carousel images={images} /> */}
-        {/* <div className="lg:absolute bottom-6 flex lg:flex-row flex-col lg:gap-5 lg:mb-0 mb-4">
 
-            <Card 
-                title="Hello world" 
-                image="https://cdn-images.imagevenue.com/9d/9e/6c/ME18IBGY_o.jpg" 
-                heading="New Title" text="Hello from a new init world" 
-                button="Generate template" 
-            />
-
-            <div className="flex justify-center items-center">
-                <ArrowIcon />
-            </div>
-
-            <Card 
-                title="Hello world"
-                image="https://cdn-images.imagevenue.com/9d/9e/6c/ME18IBGY_o.jpg"
-                heading="New Title" text="Hello from a new init world"
-                button="Generate e-com"
-            />
-
-            <div className="flex justify-center items-center">
-                <ArrowIcon />
-            </div>
-
-            <Card 
-                title="Hello world"
-                image="https://cdn-images.imagevenue.com/9d/9e/6c/ME18IBGY_o.jpg"
-                heading="New Title" text="Hello from a new init world" 
-                button="Generate landing page"
-            />
-
-        </div> */}
+        <div>
+            <MarqueeCarousel />
+        </div>
+        
     </div>
   )
 }

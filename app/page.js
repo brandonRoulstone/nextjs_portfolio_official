@@ -8,7 +8,14 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress)
+  // const scaleX = useSpring(scrollYProgress)
+  
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   const scale = useTransform(scrollYProgress, [1, 0], [2, 0.2]);
   return (
     <main className="overflow-hidden">
