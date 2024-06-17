@@ -15,7 +15,7 @@ const TypeAnimationUi = () => {
       speed={50}
       style={{ display: 'inline-block' }}
       repeat={Infinity}
-      className="text-[1.2rem] w-[100%] bg-gradient-to-r from-purple-200 via-purple-600 to-purple-900 bg-clip-text text-transparent sm:text-3xl"
+      className="text-[.8rem] w-[100%] bg-gradient-to-r from-purple-200 via-purple-600 to-purple-900 bg-clip-text text-transparent md:text-xl lg:text-3xl"
     />
   );
 };

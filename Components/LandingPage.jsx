@@ -34,7 +34,7 @@ const LandingPage = () => {
                     //     restDelta: 0.001
                     // }
                 }}
-                className="text-6xl font-bold font-serif text-zinc-100">
+                className="lg:text-6xl text-4xl mx-5 lg:mx-0 font-bold font-serif text-zinc-100">
 
                 <div className="pb-2">
                     <TypeAnimationUi />
@@ -51,7 +51,7 @@ const LandingPage = () => {
                 whileHover={{ scale: 1.2 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 whileTap={{ scale: 0.9 }}
-                className="btn bg-transparent hover:bg-white hover:text-purple-700 border border-white text-2xl cursor-pointer text-zinc-50">
+                className="btn bg-transparent hover:bg-white hover:text-purple-700 border border-white lg:text-2xl cursor-pointer text-zinc-50">
                 About Dxssinger
             </motion.button>
             
@@ -59,7 +59,7 @@ const LandingPage = () => {
                 whileHover={{ scale: 1.2 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 whileTap={{ scale: 0.9 }}
-                className="btn bg-white hover:bg-transparent hover:border-white hover:text-white border border-white text-2xl cursor-pointer text-purple-700">
+                className="btn bg-white hover:bg-transparent hover:border-white hover:text-white border border-white lg:text-2xl cursor-pointer text-purple-700">
                 Get started 
             </motion.button>
 
@@ -72,7 +72,7 @@ const LandingPage = () => {
             </a>
         </>
         {/* <Carousel images={images} /> */}
-        <div className="absolute bottom-6 flex gap-5">
+        {/* <div className="lg:absolute bottom-6 flex lg:flex-row flex-col lg:gap-5 lg:mb-0 mb-4">
 
             <Card 
                 title="Hello world" 
@@ -103,7 +103,7 @@ const LandingPage = () => {
                 button="Generate landing page"
             />
 
-        </div>
+        </div> */}
     </div>
   )
 }

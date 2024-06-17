@@ -9,7 +9,7 @@ const Card = ({title, image, heading, text, button}) => {
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
         whileTap={{ scale: 0.95 }}
-       className="card w-96 bg-black glass shadow-[-1px_1px_90px_0px_blueviolet] image-full border border-purple-300">
+        className="card lg:w-96 lg:mt-0 mt-4 bg-black glass image-full border border-purple-300">
           <figure className=''>
             {/* <Image className='w-[100%] object-cover' src={image} alt={title} width={100} height={100}/> */}
           </figure>
