@@ -17,7 +17,7 @@ const LandingPage = () => {
         'https://cdn-images.imagevenue.com/e2/8d/dd/ME18HKH0_o.png',
     ];
   return (
-    <div className="flex flex-col justify-center min-h-[100vh] items-center bg-[rgb(12,12,12)]">
+    <div className="flex flex-col justify-center min-h-[100vh] items-center bg-[rgb(13,13,13)]">
         
         <motion.div className="absolute top-[30%] left-[70%] h-[3rem] w-[3rem] bg-[regb(12,12,12)] border-[.5rem] border-white rounded-full animate-ping" style={{scale}}></motion.div>
 
@@ -44,9 +44,10 @@ const LandingPage = () => {
                 <span className="">Transform </span>
                 <span className="bg-gradient-to-r from-violet-900 via-violet-600 to-violet-900 bg-clip-text text-transparent"> Your Business</span> .
             </motion.div>
+            {/* <div className="mt-5 text-9xl font-black text-[rgba(161,113,194,0.27)] absolute flex min-h-[100vh] min-w-[50vw] items-center top-0 left-[0%] blur-sm">A flexible CMS design Tool tuned to all Your needs and Ideas</div> */}
         </div>
 
-        <div className="mt-10 flex gap-10 justify-center">
+        <div className="mt-5 flex gap-10 justify-center">
             
             <motion.button
                 whileHover={{ scale: 1.2 }}

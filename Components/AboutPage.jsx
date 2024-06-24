@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform, useAnimate, animate } from "framer-motion";
 // import Item from "./SkillsetIcons";
 // import Cursor from "./Cursor";
-// import Image from "next/image";
+import Image from "next/image";
 const AboutPage = () => {
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, .4], [0.2, 1]);
@@ -20,7 +20,7 @@ const AboutPage = () => {
           <div className="flex h-[100%] bg-zinc-300 font-[inconsolata] text-zinc-700 w-[100%] overflow-x-hidden">
 
             <div className="w-[33.3%] text-xl bg-gray-400 h-[100%]">
-              weerytuiyo
+              CLICK TO BEGIN!
             </div>
             
             <div className="w-[77.7%] text-xl bg-gray-100">
@@ -49,8 +49,8 @@ const AboutPage = () => {
 
               </div>
 
-              <div className="h-[90%] flex flex-col justify-center items-center">
-                weerytuiyo
+              <div className="h-[90%] flex flex-col justify-center items-center overflow-y-scroll">
+                BUILD ALMOST ANYTHING
               </div>
             </div>
 

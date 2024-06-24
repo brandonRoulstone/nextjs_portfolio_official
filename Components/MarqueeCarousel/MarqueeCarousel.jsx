@@ -7,11 +7,15 @@ import Image from 'next/image'
 const MarqueeCarousel = () => {
     // const { scrollYProgress } = useScroll();
     const items = [
-      // "https://cdn-images.imagevenue.com/f1/5e/dc/ME18IJTI_o.jpg",
+      "https://cdn-images.imagevenue.com/b8/43/95/ME18KO78_o.png",
       "https://cdn-images.imagevenue.com/6f/26/c4/ME18IINN_o.jpg",
+      "https://cdn-images.imagevenue.com/b8/43/95/ME18KO78_o.png",
       "https://cdn-images.imagevenue.com/6f/26/c4/ME18IINN_o.jpg",
+      "https://cdn-images.imagevenue.com/b8/43/95/ME18KO78_o.png",
       "https://cdn-images.imagevenue.com/6f/26/c4/ME18IINN_o.jpg",
+      "https://cdn-images.imagevenue.com/b8/43/95/ME18KO78_o.png",
       "https://cdn-images.imagevenue.com/6f/26/c4/ME18IINN_o.jpg",
+      "https://cdn-images.imagevenue.com/b8/43/95/ME18KO78_o.png",
     ];
   return (
 
