@@ -30,9 +30,9 @@ export default function Home() {
 
       </section>
 
-      <section className="min-h-screen flex flex-col">
+      {/* <section className="min-h-screen flex flex-col">
         <AboutPage />
-      </section>
+      </section> */}
 
       <section className="min-h-screen flex flex-col justify-center items-center">
         <ProjectsPage />

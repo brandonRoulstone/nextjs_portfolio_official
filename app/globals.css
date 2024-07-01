@@ -8,15 +8,22 @@
   animation-duration: .6s;
 }
 
+.navigate-leave{
+  animation-name: nav-leave;
+  animation-duration: .6s;
+}
+
 .font-inconsolata{
   font-family: Inconsolata;
   line-height: normal;
   font-weight: 600;
 }
 
-/* *{
-  cursor: none;
-} */
+.bg-img{
+  background-image: url("background-image:url(&quot;data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23171717'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e&quot;");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @keyframes nav-like-animation {
   from {
@@ -24,6 +31,15 @@
   }
   to{
     left: 0%;
+  }
+}
+
+@keyframes nav-leave {
+  from {
+    left: 0%;
+  }
+  to{
+    left: -20%;
   }
 }
 
@@ -48,7 +64,7 @@
     transform: translateX(0%); 
   }
   100% { 
-    transform: translateX(-50%);
+    transform: translateX(-200%);
   }
 }
 
@@ -61,7 +77,7 @@
 .marquee-content {
   display: flex;
   white-space: nowrap;
-  animation: marquee 15s linear alternate infinite;
+  animation: marquee 15s linear alternate-reverse infinite;
 }
 
 .marquee-item {

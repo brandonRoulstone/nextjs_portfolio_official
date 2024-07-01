@@ -7,15 +7,10 @@ import Image from 'next/image'
 const MarqueeCarousel = () => {
     // const { scrollYProgress } = useScroll();
     const items = [
-      "https://cdn-images.imagevenue.com/b8/43/95/ME18KO78_o.png",
       "https://cdn-images.imagevenue.com/6f/26/c4/ME18IINN_o.jpg",
-      "https://cdn-images.imagevenue.com/b8/43/95/ME18KO78_o.png",
       "https://cdn-images.imagevenue.com/6f/26/c4/ME18IINN_o.jpg",
-      "https://cdn-images.imagevenue.com/b8/43/95/ME18KO78_o.png",
       "https://cdn-images.imagevenue.com/6f/26/c4/ME18IINN_o.jpg",
-      "https://cdn-images.imagevenue.com/b8/43/95/ME18KO78_o.png",
       "https://cdn-images.imagevenue.com/6f/26/c4/ME18IINN_o.jpg",
-      "https://cdn-images.imagevenue.com/b8/43/95/ME18KO78_o.png",
     ];
   return (
 
@@ -26,15 +21,15 @@ const MarqueeCarousel = () => {
         <div className="marquee-content flex">
 
           {items.map((item, index) => (
-              <div className="marquee-item mx-4 inline-block" key={index}>
-                <Image height={150} width={300} src={item} alt={`Item ${index + 1}`} className="inline-block rounded-2xl lg:w-[33.3%] object-fit" />
+              <div className="marquee-item mx-2 inline-block" key={index}>
+                <Image height={700} width={700} src={item} alt={`Item ${index + 1}`} className="inline-block rounded-2xl lg:w-[50%] object-fit" />
               </div>
           ))}
 
           {/* Gives an infinite illusion */}
           {items.map((item, index) => (
-              <div className="marquee-item mx-4 inline-block" key={`dup-${index}`}>
-                <Image height={150} width={300} src={item} alt={`Item ${index + 1}`} className="inline-block rounded-2xl lg:w-[33.3%] object-fit" />
+              <div className="marquee-item mx-2 inline-block" key={`dup-${index}`}>
+                <Image height={700} width={700} src={item} alt={`Item ${index + 1}`} className="inline-block rounded-2xl lg:w-[50%] object-fit" />
               </div>
           ))}
 

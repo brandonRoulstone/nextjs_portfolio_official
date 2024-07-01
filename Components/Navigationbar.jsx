@@ -13,7 +13,7 @@ const NavigationBar = () => {
 
   return (
     <>
-        <div className="navbar bg-[rgb(12,12,12)] fixed top-0 z-[100]">
+        <div className="navbar bg-blue-100 fixed top-0 z-[100]">
             <div className="flex-none">
                 <label className="btn bg-transparent border-none btn-circle swap swap-rotate hover:bg-transparent">
 
@@ -42,20 +42,16 @@ const NavigationBar = () => {
         </div>
 
         { open === true ? (
-                <div className="translate-nav bg-[rgb(22,22,22)] h-[100vh] w-72 fixed top-18 flex justify-center items-center ease-linear transition-all z-10" id="navbar">
+                <div className="translate-nav bg-blue-100 h-[100vh] w-72 fixed top-18 flex justify-center items-center ease-linear transition-all z-10" id="navbar">
                     <ul className="flex justify-evenly flex-col list-none text-xl font-semibold">
 
-                        <div className="h-[100vh] flex flex-col justify-center min-w-[100%] items-center top-[5rem] gap-11 text-zinc-50">
+                        <div className="h-[100vh] flex flex-col justify-center min-w-[100%] items-center top-[5rem] gap-11 text-zinc-900">
 
-                            <li><Link href="/">Home</Link></li>
-
-                            <li><Link href="/">About me</Link></li>
-
-                            <li><Link href="/">Reviews</Link></li>
-
-                            <li><Link href="/">Projects</Link></li>
-
-                            <li><Link href="/">Contact me</Link></li>
+                            <li className='text-4xl font-extrabold' style={{ lineHeight: '1.8rem', width: '100%' }}><Link href="/">Home</Link></li>
+                            <li className='text-4xl font-extrabold' style={{ lineHeight: '1.8rem', width: '100%' }}><Link href="/">About</Link></li>
+                            <li className='text-4xl font-extrabold' style={{ lineHeight: '1.8rem', width: '100%' }}><Link href="/">Reviews</Link></li>
+                            <li className='text-4xl font-extrabold' style={{ lineHeight: '1.8rem', width: '100%' }}><Link href="/">Projects</Link></li>
+                            <li className='text-4xl font-extrabold' style={{ lineHeight: '1.8rem', width: '100%' }}><Link href="/">Contact</Link></li>
 
                         </div>
 

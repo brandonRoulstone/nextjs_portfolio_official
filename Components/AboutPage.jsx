@@ -1,17 +1,14 @@
 "use client"
-// import { useEffect } from "react";
 import { motion, useScroll, useTransform, useAnimate, animate } from "framer-motion";
-// import Item from "./SkillsetIcons";
-// import Cursor from "./Cursor";
-import Image from "next/image";
+import parallaxCarousel from './MarqueeCarousel/parallaxCarousel'
 const AboutPage = () => {
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, .4], [0.2, 1]);
   return (
     <>
-      <div className="min-h-screen flex justify-center items-center flex-col-reverse lg:flex-row-reverse w-[100%] bg-[rgb(0,0,0)] p-4">
+      <div className="min-h-screen flex justify-center items-center flex-col-reverse lg:flex-row-reverse w-[100%] bg-blue-50 p-4">
         
-        <motion.div style={{scale}} className="mockup-browser border w-[100%] border-violet-700 bg-zinc-50 mx-4 h-[70vh] shadow-[-23px_20px_194px_0px_#805ad5]" id="windowCMD">
+        <motion.div style={{scale}} className="mockup-browser border w-[100%] border-violet-700 bg-zinc-50 mx-4 h-[70vh]" id="windowCMD">
 
           <div className="mockup-browser-toolbar">
             <div className="input">https://Dxsigner.io</div>
@@ -59,7 +56,7 @@ const AboutPage = () => {
         </motion.div>
 
         <div className="flex flex-col justify-center w-[100%] mx-4">
-          <div className="text-zinc-50 text-5xl flex">
+          <div className="text-zinc-900 text-5xl flex">
             <h2 className="font-semibold w-50">Create Something <span className="text-purple-400">Attractive.</span></h2>
             <svg
               width="28"
@@ -80,19 +77,19 @@ const AboutPage = () => {
 
           <div className="text-center w-[100%] flex lg:flex-row flex-col gap-3 mb-3 md:mt-10">
 
-            <div className="text-xl font-extrabold py-2 px-4 border border-violet-300 mx-3 rounded-3xl skeleton">
+            <div className="text-xl font-extrabold py-2 px-4 border border-violet-300 mx-3 rounded-3xl bg-zinc-50">
               Reimagine design
             </div>
             
-            <div className="text-xl font-extrabold py-2 px-4 border border-violet-300 mx-3 rounded-3xl skeleton">
+            <div className="text-xl font-extrabold py-2 px-4 border border-violet-300 mx-3 rounded-3xl bg-zinc-50">
               Reanimate design
             </div>
 
-            <div className="text-xl font-extrabold py-2 px-4 border border-violet-300 mx-3 rounded-3xl skeleton">
+            <div className="text-xl font-extrabold py-2 px-4 border border-violet-300 mx-3 rounded-3xl bg-zinc-50">
               Redesign design
             </div>
 
-            <div className="text-xl font-extrabold py-2 px-4 border border-violet-300 mx-3 rounded-3xl skeleton">
+            <div className="text-xl font-extrabold py-2 px-4 border border-violet-300 mx-3 rounded-3xl bg-zinc-50">
               Rethink design
             </div>
 
